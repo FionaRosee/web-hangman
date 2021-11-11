@@ -1,0 +1,16 @@
+name: CI
+
+on: [ push ]
+
+jobs:
+  test:
+    runs-on: unbuntu-latest
+    steps:
+      - usues: actions/checkout@v2
+      - name: Set up JDK 16
+        uses: actions/setup-java@v2
+        with:
+          distribution: "adopt"
+          jave-version: 16
+      - name: clean build
+        run: ./gradlew clean test --info --stacktrace
