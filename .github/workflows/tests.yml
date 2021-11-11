@@ -1,4 +1,4 @@
-name: CI //after running
+name: CI //after running 2
 
 on: [ push ]
 
@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: unbuntu-latest
     steps:
-      - usues: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Set up JDK 16
         uses: actions/setup-java@v2
         with:
