@@ -1,4 +1,4 @@
-package htwwebtech.hangman;
+package htwwebtech.hangman.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
