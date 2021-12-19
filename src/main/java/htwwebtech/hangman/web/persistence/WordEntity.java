@@ -3,7 +3,7 @@ package htwwebtech.hangman.web.persistence;
 import javax.persistence.*;
 
 @Entity(name = "words")
-public class WordEntity {
+public class WordEntity { //
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
