@@ -19,6 +19,7 @@ public class Word {
         this.id = id;
         this.length = length;
         this.difficulty = difficulty;
+        this.word = word;
     }
 
     public long getId() {

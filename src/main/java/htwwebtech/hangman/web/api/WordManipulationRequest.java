@@ -6,18 +6,12 @@ public class WordManipulationRequest {
     private int difficulty;
     private String word;
 
-    public String getWord() {
-        return word;
-    }
 
-    public void setWord(String word) {
-        this.word = word;
-    }
-
-    public WordManipulationRequest(int id, int length, int difficulty) {
+    public WordManipulationRequest(int id, int length, int difficulty, String word) {
         this.id = id;
         this.length = length;
         this.difficulty = difficulty;
+        this.word= word;
     }
 
     public WordManipulationRequest() {}
@@ -45,5 +39,14 @@ public class WordManipulationRequest {
     public void setDifficulty(int difficulty) {
         this.difficulty = difficulty;
     }
+
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
+
 }
 
