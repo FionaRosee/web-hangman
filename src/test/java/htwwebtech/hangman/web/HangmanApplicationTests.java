@@ -1,4 +1,4 @@
-package htwwebtech.hangman;
+package htwwebtech.hangman.web;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
