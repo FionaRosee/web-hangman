@@ -7,6 +7,7 @@ import htwwebtech.hangman.web.api.WordManipulationRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletOutputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -21,9 +22,13 @@ public class WordRestController {
     }
 
     @GetMapping(path = "/api/v1/words")
-    public ResponseEntity<List<Word>> fetchWords() {
+    public ResponseEntity<List<Word>> fetchWords()  {
+        System.out.println("Hier");
+        var result= wordService.findAll();
+        System.out.println(result);
         return ResponseEntity.ok(wordService.findAll());
     }
+
 
     @GetMapping(path = "/api/v1/words/{id}")
     public ResponseEntity<Word> fetchWordById(@PathVariable Long id) {
